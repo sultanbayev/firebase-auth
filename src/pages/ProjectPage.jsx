@@ -30,7 +30,6 @@ const ProjectPage = () => {
                     <div><strong>Project Name: </strong>{projectData.name}</div>
                     <div><strong>Author: </strong>{projectData.author}</div>
                     <div><strong>Customer: </strong>{projectData.customer}</div>
-                    <div><Link to="edit">Edit</Link></div>
                 </div>
                 )
             }

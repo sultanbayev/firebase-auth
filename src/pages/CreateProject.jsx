@@ -38,7 +38,7 @@ const CreateProject = () => {
             // console.log("Document written with ID: ", docRef.id);
             navigate('/projects/' + docRef.id)
         }).catch((error) => {
-                setError('Failed to log in. ' + error.code);
+                setError('Failed to create project. ' + error.code);
         })
     }
 

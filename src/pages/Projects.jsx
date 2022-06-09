@@ -37,7 +37,6 @@ const Projects = () => {
                     <Card className="mb-2" key={project.id}>
                         <Card.Header className="d-flex justify-content-between">
                             <div><Link to={project.id}>{project.name}</Link></div>
-                            <div><Link to={ `${project.id}/edit` }>Edit</Link></div>
                         </Card.Header>
                         <Card.Body>
                             <div><strong>Author: </strong>{project.author}</div>

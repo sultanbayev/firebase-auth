@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Container, Form, Card, Button, Alert, Spinner } from 'react-bootstrap';
+import { Container, Form, Card, Alert } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { resetSignupStatus, setSignupErrorMessage, setSignupStatus, signupThunk } from '../services/actions/userAuth';
@@ -22,6 +22,7 @@ const SignUp = () => {
         if (!isLoading && signupErrorMessage) {
             dispatch(resetSignupStatus())
         }
+    //eslint-disable-next-line
     }, [])
 
     const handleSubmit = (e) => {

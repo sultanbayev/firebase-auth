@@ -25,12 +25,14 @@ const LogIn = () => {
         if (hasSucceeded) {
             navigate(from)
         }
+    //eslint-disable-next-line
     }, [hasSucceeded])
 
     useEffect(() => {
         if (!isLoading && loginErrorMessage) {
             dispatch(resetLoginStatus())
         }
+    //eslint-disable-next-line
     }, [])
 
     const handleSubmit = (e) => {

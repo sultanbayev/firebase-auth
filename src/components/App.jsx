@@ -14,7 +14,7 @@ import { setUser, setUserRequest } from '../services/actions/user';
 import BasicLayout from './layouts/BasicLayout';
 import {
   SignUp, LogIn, ResetPassword, VerifyEmail,
-  NoMatch, Home, Profile, Projects, ProjectPage, CreateProject, EditProject
+  NoMatch, Home, Profile, Projects, ProjectPage, CreateProject
 } from '../pages'
 
 
@@ -58,7 +58,6 @@ const App = () => {
               <Route path="projects">
                 <Route path="new" element={<CreateProject />} />
                 <Route path=":projectId" element={<ProjectPage />} />
-                <Route path=":projectId/edit" element={<EditProject />} />
                 <Route index element={<Projects />} />
               </Route>
               <Route path="profile" element={<Profile />} />

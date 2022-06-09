@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
-import { Container, Form, Card, Button, Alert, Spinner } from 'react-bootstrap';
+import { useEffect, useRef } from 'react';
+import { Container, Form, Card, Alert } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { resetResetPasswordStatus } from '../services/actions/userAuth';
@@ -21,6 +21,7 @@ const ResetPassword = () => {
         if (!isLoading && resetPasswordErrorMessage) {
             dispatch(resetResetPasswordStatus())
         }
+    //eslint-disable-next-line
     }, [])
 
     const handleSubmit = (e) => {

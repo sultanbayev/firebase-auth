@@ -11,9 +11,8 @@ import Profile from "./Profile";
 import Projects from "./Projects";
 import ProjectPage from "./ProjectPage";
 import CreateProject from "./CreateProject";
-import EditProject from "./EditProject";
 
 export {
     SignUp, LogIn, ResetPassword, VerifyEmail,
-    NoMatch, Home, Profile, Projects, ProjectPage, CreateProject, EditProject
+    NoMatch, Home, Profile, Projects, ProjectPage, CreateProject
 }

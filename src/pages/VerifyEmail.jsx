@@ -22,6 +22,7 @@ const VerifyEmail = () => {
         if (!isLoading && verifyEmailErrorMessage) {
             dispatch(resetVerifyEmailStatus())
         }
+    //eslint-disable-next-line
     }, [])
 
     const handleSend = () => {
@@ -47,7 +48,8 @@ const VerifyEmail = () => {
                     </Card.Body>
                 </Card>
                 <div className="w-100 text-center mt-2">
-                    Not you? <a href="#" onClick={handleLogout} >Log Out</a>
+                    {/* eslint-disable-next-line */}
+                    Not you? <a href="#" onClick={handleLogout}>Log Out</a>
                 </div>
             </Container>
     )

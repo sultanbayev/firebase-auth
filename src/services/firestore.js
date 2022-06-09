@@ -1,4 +1,4 @@
-import { doc, collection, addDoc, setDoc, getDoc } from "firebase/firestore";
+import { doc, collection, addDoc, getDoc } from "firebase/firestore";
 import { db } from "../firebase";
 
 export const projectsRef = collection(db, "projects");

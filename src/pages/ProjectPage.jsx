@@ -20,6 +20,7 @@ const ProjectPage = () => {
             .catch((error) => {
                 console.log(error)
             })
+    //eslint-disable-next-line
     }, []);
 
     return (

@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { Card, Container, Form, Spinner, Alert } from "react-bootstrap";
+import { Card, Container, Form, Alert } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import { createProject } from "../services/firestore";
 import ButtonWithLoading from "../components/ButtonWithLoading";
